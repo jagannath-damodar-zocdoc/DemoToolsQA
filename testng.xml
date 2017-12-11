@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="DemoToolsQA">
+<!-- 
+<suite name="DemoToolsQA" thread-count="3" parallel="tests" >
+ -->	
+ 	<parameter name="appURL" value="http://store.demoqa.com/"></parameter>
+	
+	<listeners>
+		<listener class-name="com.toolsqa.listeners.Listeners"></listener>
+	</listeners>	
+
+<!-- 
+	<test name="IE Register Test">
+		<parameter name="browser" value="ie"></parameter>			
+		<classes>
+		<class name="com.toolsqa.seltests.RegisterTests"></class>			
+		</classes>
+	</test>
+ -->	 		   
+
+	<test name="CHROME Register Test">
+	<parameter name="browser" value="chrome"></parameter>					
+
+	 	<classes>
+			<class name="com.toolsqa.seltests.RegisterTests"></class>											
+		</classes>
+	</test>
+ 
+<!--  	
+		<test name="FIREFOX Register Test">
+		<parameter name="browser" value="firefox"></parameter>				
+		<classes>
+			<class name="com.toolsqa.seltests.RegisterTests"></class>
+		</classes>
+	</test>
+-->
+	 	  	  
+</suite>
+
+
+<!-- 
+	 <groups>
+	  		<run>
+				<include name="register"/>
+			</run>
+		</groups>
+ -->	   
+	
+

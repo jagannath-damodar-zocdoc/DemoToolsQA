@@ -1,0 +1,33 @@
+Test cases
+
+Registration
+	RegisterPageHasAllRequiredElements()
+		Registration page has the following elements
+			Verify Page Title.
+			"Register for this site" message.
+			username text box.
+			Email text box
+			"Registration confirmation will be emailed to you." message
+			Register button.
+			Links to 
+				Log in
+				 Lost your password?
+				 Back to ONLINE STORE 
+	
+	registerWithValidUsernameAndPasswd()
+		Go to register page. Enter usernanme and email id .Click on register button. Verify for message "Registration complete. Please check your email" 
+		Run the scenario with multiple valid test data.
+	
+		
+	Try to register with same email id twice. Verify message "This email is already registered, please choose another one."				
+	Try to register with same username twice. Verify message "ERROR: This username is already registered. Please choose another one."
+	
+
+	Do not enter username . Enter email id. Click register . Verify message "Please enter a username."
+	Do not enter email id . Click on register button . "ERROR: Please type your email address."
+	
+	Enter invalid emailid . Verify message "ERROR: The email address isn’t correct."
+	
+	Empty username and password. 	 
+	
+	
